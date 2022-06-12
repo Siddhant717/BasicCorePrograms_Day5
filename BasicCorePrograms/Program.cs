@@ -6,29 +6,22 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            int num1, num2, num3;
-            Console.WriteLine("Find the largest among three numbers-");
-            Console.Write("Input the 1st number :");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input the  2nd number :");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input the 3rd  number :");
-            num3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter any Character :");
+            char ch = Convert.ToChar(Console.ReadLine());
 
-
-            if (num1 >= num2 && num1 >= num3)
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                Console.WriteLine("1st is the largest number.");
-
+                Console.WriteLine(ch + " is a vowel.");
             }
-            else if (num2 >= num1 && num2 >= num3)
+            else if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
             {
-                Console.WriteLine("2nd is the largest number.");
+                Console.WriteLine(ch + " is a Consonant.");
             }
             else
             {
-                Console.WriteLine("3rd is the largest number.");
+                Console.WriteLine("oops! Please enter a alphabet.");
             }
+
         }
     }
 
