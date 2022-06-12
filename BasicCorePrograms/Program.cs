@@ -7,26 +7,24 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Please enter the value of n: ");
+            Console.WriteLine(" Please enter the value of n");
             int n = Convert.ToInt32(Console.ReadLine());
-
-            int power = 1;
-            if (n <= 31)
+            float sum = 0;
+            for (float i = 1; i <= n; i++)
             {
-                for (int i = 1; i <= n; i++)
-                {
-                    power = power * 2;
-                }
-
-                Console.WriteLine("The power of 2= " + power);
+                sum = sum + (1 / i);
             }
+           
 
-
-
-
-            
+            Console.WriteLine("harmonic mean upto " + n + " = " + sum);
         }
+
+
+
+
+
     }
+    
 
 
     
