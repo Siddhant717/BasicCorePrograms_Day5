@@ -6,20 +6,18 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            int dividend;
-            int divisor;
-            Console.WriteLine("Enter the Dividend value :");
-            dividend = Convert.ToInt32(Console.ReadLine());
+            int a, b;
+            Console.WriteLine("Enter the value of a :");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value of b :");
+            b = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the Divisor value :");
-            divisor = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Before swap a = " + a + "  b = " + b);
+            a = a * b;
+            b = a / b;
+            a = a / b;
 
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
-
-
-            Console.WriteLine("Quotient : {0}", quotient);
-            Console.WriteLine("Remainder : {0}", remainder);
+            Console.WriteLine("After swap a = " + a + "  b = " + b);
         }
 
 
